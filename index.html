@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="all.min.css" />
+  </head>
+  <body class="bkg-light">
+    <div
+      class="container flex flex-d-column flex-align-center flex-justify-center"
+    >
+      <h2 class="col-dark pdt-1">Todo List App</h2>
+      <p class="col-dark text-mute">Created by Sanele Zikhali</p>
+      <div class="todo-wrapper pdt-1">
+        <div class="todo-input flex flex-align-center">
+          <div class="in-wrap">
+            <input type="text" id="task-input" placeholder="Add to List" />
+            <i class="fa fa-plus input-icon"></i>
+          </div>
+          <button class="bt bkg-primary bt-nrl" id="btn-add">Add Task</button>
+        </div>
+        <div class="error-wrapper flex flex-justify-between">
+          <p class="col-danger" id="error"></p>
+          <i id="error-icon"></i>
+        </div>
+        <div class="todo-list"></div>
+        <div class="tasks-counter">
+          <p class="col-dark"><span id="task-counter">0</span> Task(s)</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="all.min.js"></script>
+  </body>
+</html>
